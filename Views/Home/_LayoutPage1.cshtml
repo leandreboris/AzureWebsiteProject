@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/css/style.css" rel="stylesheet" />
+    <script src="~/js/easing.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/mousewheel.js"></script>
+    <script src="~/js/rhinoslider-1.02.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#slider').rhinoslider({
+                autoPlay: true
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+    <div class="header">
+        <div class="wrap">
+            <div class="logo"><a href="~/Home/Index">ENSA Al Hoceima</a></div>
+            <div class="phone">
+                <ul>
+                    <li><span class="icon mob"></span>Contact : +212 000-000000</li>
+                    <li><span class="icon mail"></span>Email : <a href="mailto:ensah.ma">@@ensah.ma</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="nav">
+                <ul>
+                    <li>@Html.ActionLink("Accueil", "Index")</li>
+                    <li>@Html.ActionLink("A propos", "Single")</li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Nos travaux</a></li>
+                    <li>@Html.ActionLink("Contact", "Contact")</li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <div class="f-menu">
+                <ul>
+                    <li>@Html.ActionLink("Accueil", "Index")</li>
+                    <li>@Html.ActionLink("A propos", "Single")</li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Nos travaux</a></li>
+                    <li>@Html.ActionLink("Contact", "Contact")</li>
+                </ul>
+                <div class="copy">© 2021 Brownie. Tous droits reservés. Design par <a href="http://w3layouts.com" style="color:#A68775;"></a> <a href="http://w3layouts.com" style="color:#A68775;">W3Layouts</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

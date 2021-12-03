@@ -1,0 +1,33 @@
+﻿@model Azure_Project.Models.ContactModel
+
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Home/_LayoutPage1.cshtml";
+}
+
+<div class="wrap">
+    <div class="content">
+        <div class="b-box">
+            <h1>Contact</h1>
+            <div class="form">
+                <form>
+                    <div>
+                        <span><label for="name">Nom</label></span>
+                        <span><input type="text" /></span>
+                    </div>
+                    <div>
+                        <span><label for="email">Courriel électronique</label></span>
+                        <span><input type="text" /></span>
+                    </div>
+                    <div>
+                        <span><label for="subject">Sujet</label></span>
+                        <span><textarea></textarea></span>
+                    </div>
+                    <div>
+                        <span><input class="submit" type="submit" value="Envoyer" /></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
